@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login | Smart Skincare</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url("D:/swc exercise/image/skincareee.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 350px;
+      text-align: center;
+    }
+    h2 {
+      color: #ff5c8a;
+      margin-bottom: 20px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ff5c8a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #e64c76;
+    }
+    a {
+      text-decoration: none;
+      color: #ff5c8a;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>User Login</h2>
+    <form action="user_login.php" method="POST">
+      <input type="text" name="username" placeholder="Enter Username" required><br>
+      <input type="password" name="password" placeholder="Enter Password" required><br>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don’t have an account? <a href="register.html">Register here</a></p>
+  </div>
+</body>
+</html>

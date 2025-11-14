@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - Products</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Admin Dashboard</h1>
+</header>
+
+<section class="admin-products">
+  <button id="addProductBtn">Add Product</button>
+  <table border="1" id="productsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<!-- Add/Edit Product Form Modal -->
+<div id="productModal" style="display:none;">
+  <form id="productForm">
+    <input type="hidden" id="productId">
+    <label>Name:</label><input type="text" id="name" required><br>
+    <label>Price:</label><input type="number" id="price" required><br>
+    <label>Stock:</label><input type="number" id="stock" required><br>
+    <label>Description:</label><textarea id="short_desc"></textarea><br>
+    <label>Images:</label><input type="file" id="images" multiple><br>
+    <input type="hidden" id="existing_images">
+    <button type="submit">Save</button>
+    <button type="button" id="closeModal">Cancel</button>
+  </form>
+</div>
+
+<script src="js/admin-products.js"></script>
+</body>
+</html>

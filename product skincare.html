@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Skincare - Products</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #fff8f9;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5b3c2;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffe6ee;
+    }
+
+    .container {
+      flex: 1;
+      padding: 60px 80px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #f47d9b;
+      margin-bottom: 40px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      justify-items: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      color: #f47d9b;
+    }
+
+    .card-content p {
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #f5b3c2;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #f47d9b;
+    }
+
+    footer {
+      background-color: #f5b3c2;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body class="logo">
+  <!-- Header -->
+  <header>
+    <div class="logo">SMART SKINCARE</div>
+	  <div class="banner">
+
+</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Our Skincare Products ✨</h1>
+
+    <div class="products">
+      <!-- Product 1 -->
+      <div class="card">
+        <img src="image/serumm.jpg" alt="Glow Serum">
+        <div class="card-content">
+          <h3>Glow Serum</h3>
+          <p>Brightening and hydrating serum for daily use.</p>
+          <p class="price"></p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="card">
+        <img src="image/cleanserr.jpg" alt="Clean Foam">
+        <div class="card-content">
+          <h3>Clean Foam</h3>
+          <p>Gentle cleanser suitable for all skin types.</p>
+          <p class="price"></p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="card">
+        <img src="image/crammm.jpg" alt="Hydra Cream">
+        <div class="card-content">
+          <h3>Hydra Cream</h3>
+          <p>Moisturizing cream that softens and hydrates skin.</p>
+          <p class="price"></p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Smart Skincare | All Rights Reserved
+  </footer>
+</body>
+</html>

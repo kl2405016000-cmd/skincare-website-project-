@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 align="center">Registration Form</h1>
+    <form method="post" action="register.php">
+        <table width="676" border="0" cellspacing="2" cellpadding="5" align="center">
+            <tbody>
+                <!-- Student Name -->
+                <tr>
+                    <td width="129" height="46"><label for="studentName">Student's Name</label></td>
+                    <td width="28" align="center">:</td>
+                    <td width="351">
+                        <input type="text" name="studentName"id="studentName" size="50" value= "HARTINI">
+                    </td>
+                </tr>
+
+                <!-- ID Number -->
+                <tr>
+                    <td height="49"><label for="id">ID No.</label></td>
+                    <td align="center">:</td>
+                    <td><p>&nbsp;</p>
+                      <p><br>
+                    </p></td>
+                </tr>
+
+                <!-- Program -->
+                <tr>
+                    <td><label for="program">Program</label></td>
+                    <td align="center">:</td>
+                    <td>
+                        <select name="program" id="program" size="4" required>
+                            <option value="Diploma_CS">Diploma in Computer Science</option>
+                            <option value="Diploma_IT">Diploma in Information Technology</option>
+                            <option value="Bachelor_CS">Bachelor in Computer Science</option>
+                            <option value="Bachelor_IT">Bachelor in Information Technology</option>
+							<option value="Bachelor_CS" selected>Bachelor in Computer Science</option>
+							<option value="Bachelor_CS" selected>Bachelor in Information Technology</option>
+
+
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Semester -->
+                <tr>
+                    <td><label>Semester</label></td>
+                    <td align="center">:</td>
+                  <td>
+                        <input type="radio" name="sem" id="sem1" value="Semester 1" required> Semester 1 <br>
+                        <input type="radio" name="sem" id="sem2" value="Semester 2"> Semester 2 <br>
+                        <input type="radio" name="sem" id="sem3" value="Semester 3"> Semester 3
+						<input type="radio" name="sem" id="sem4" value="Semester 4"> Semester 4
+						<input type="radio" name="sem" id="sem5" value="Semester 5"> Semester 5
+						
+                    </td>
+                </tr>
+
+                <!-- Phone Number -->
+                <tr>
+                    <td><label for="phoneNo">Phone No.</label></td>
+                    <td align="center">:</td>
+                    <td>
+                        <input type="text" name="phoneNo" id="phoneNo" size="30" value= "0136146379">
+                    </td>
+                </tr>
+
+                <!-- Address -->
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td align="center">:</td>
+                    <td>
+                        <textarea name="address" id="address" rows="4" cols="50" required>Kampung Pulau Manis Jalan Gambang Pahang Kuantan</textarea>
+                    </td>
+                </tr>
+
+                <!-- Email -->
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td align="center">:</td>
+                    <td>
+                        <input type="email" name="email" id="email" size="54" value= "tinih9554@gmail.com">
+                    </td>
+                </tr>
+
+                <!-- Buttons -->
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="submit" name="submit" id="submit" value="Register">
+                        &nbsp;&nbsp;
+                        <input type="reset" name="reset" id="reset" value="Clear All">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
